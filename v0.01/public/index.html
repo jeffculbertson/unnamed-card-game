@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unnamed Card Game</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Prototype</p>
+      <h1>Remote Four-Player Card Table</h1>
+      <p class="lede">Start a room, invite friends, and deal four hands of 13 cards. This draft focuses on seating, dealing, and per-player views.</p>
+    </div>
+    <div class="meta">
+      <div class="meta-row">
+        <span class="label">Game Code</span>
+        <span id="gameCode" class="value muted">—</span>
+      </div>
+      <div class="meta-row">
+        <span class="label">You</span>
+        <span id="playerName" class="value muted">—</span>
+      </div>
+      <div class="meta-row">
+        <span class="label">Status</span>
+        <span id="status" class="value muted">Idle</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel">
+      <h2>Start or Join</h2>
+      <div class="grid two">
+        <form id="createForm" class="card">
+          <h3>Host a new game</h3>
+          <label for="createName">Your name</label>
+          <input id="createName" name="name" type="text" autocomplete="name" placeholder="Alex" required>
+          <button type="submit">Create game</button>
+        </form>
+        <form id="joinForm" class="card">
+          <h3>Join existing game</h3>
+          <label for="joinCode">Game code</label>
+          <input id="joinCode" name="gameId" type="text" placeholder="ABCDE" required>
+          <label for="joinName">Your name</label>
+          <input id="joinName" name="name" type="text" autocomplete="name" placeholder="Riley" required>
+          <button type="submit">Join game</button>
+        </form>
+      </div>
+      <div class="inline-actions">
+        <button id="resetSession" type="button" class="ghost">Reset local session</button>
+        <span id="message" class="message"></span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <div>
+          <h2>Lobby</h2>
+          <p class="muted small">Up to 4 seats. Host starts when everyone is here.</p>
+        </div>
+        <div class="actions">
+          <button id="startGame" type="button" disabled>Deal four hands</button>
+        </div>
+      </div>
+      <ul id="players" class="players"></ul>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <div>
+          <h2>Table view</h2>
+          <p class="muted small">Your cards at the bottom; partner sits across. Others show as card backs.</p>
+        </div>
+      </div>
+      <div class="table" id="table">
+        <div class="seat north" data-seat="north">
+          <div class="seat-name">Waiting…</div>
+          <div class="seat-cards"></div>
+        </div>
+        <div class="seat west" data-seat="west">
+          <div class="seat-name">Waiting…</div>
+          <div class="seat-cards"></div>
+        </div>
+        <div class="seat center">
+          <div class="center-label">Table</div>
+        </div>
+        <div class="seat east" data-seat="east">
+          <div class="seat-name">Waiting…</div>
+          <div class="seat-cards"></div>
+        </div>
+        <div class="seat south" data-seat="south">
+          <div class="seat-name">You</div>
+          <div class="seat-cards"></div>
+        </div>
+      </div>
+      <div class="hand" id="hand"></div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
