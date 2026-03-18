@@ -1,0 +1,152 @@
+/* ------------------------------
+ | MODULAR TYPE SCALE
+ | ------------------------------
+ | Helps you create type scales that bring natural rhythm,
+ | consistency, and balance to your designs.
+ |
+ | BASE VALUES:
+ | - Font Size: 16px / 1rem
+ | - Line Height: 24px / 1.5
+ | - Letter Spacing: 0% / 0em
+ |
+ | SCALE:
+ | - Ratio: 1.19 - Minor Third
+ |
+ | LINE GRID:
+ | - Grid Unit: 4px / 0.25rem
+ |
+ |
+ | Scale ratio is calculated using an equal temperament tuning system.
+ | Created with Precise Type / https://precise-type.com
+ | Tools & Models by Adonis Raul Raduca
+ */
+
+/* --- Font Sizes --- */
+
+:root {
+  /* below the base */
+  --font-size-2b: 0.6875rem;
+  --font-size-1b: 0.8125rem;
+
+  /* the base */
+  --font-size: 1rem;
+
+  /* above the base */
+  --font-size-1: 1.1875rem;
+  --font-size-2: 1.4375rem;
+  --font-size-3: 1.6875rem;
+  --font-size-4: 2rem;
+  --font-size-5: 2.375rem;
+  --font-size-6: 2.8125rem;
+}
+
+/* --- Line Heights --- */
+
+:root {
+  /* below the base */
+  --line-height-2b: 1.8182;
+  --line-height-1b: 1.5385;
+
+  /* the base */
+  --line-height: 1.5;
+
+  /* above the base */
+  --line-height-1: 1.4737;
+  --line-height-2: 1.3913;
+  --line-height-3: 1.3333;
+  --line-height-4: 1.25;
+  --line-height-5: 1.2632;
+  --line-height-6: 1.1556;
+}
+
+/* --- Letter Spacings --- */
+
+:root {
+  /* below the base */
+  --letter-space-2b: 0.0136em;
+  --letter-space-1b: 0.0069em;
+
+  /* the base */
+  --letter-space: 0em;
+
+  /* above the base */
+  --letter-space-1: -0.0047em;
+  --letter-space-2: -0.0091em;
+  --letter-space-3: -0.0122em;
+  --letter-space-4: -0.015em;
+  --letter-space-5: -0.0174em;
+  --letter-space-6: -0.0193em;
+}
+
+/* ------------------------------
+ | Examples
+ */
+
+/* --- Default Text --- */
+
+body {
+  font-weight: 400;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-space);
+}
+
+/* --- Headers --- */
+
+:is(h1, h2, h3) {
+  font-weight: 700;
+}
+:is(h4, h5, h6) {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: var(--font-size-6);
+  line-height: var(--line-height-6);
+  letter-spacing: var(--letter-space-6);
+}
+h2 {
+  font-size: var(--font-size-5);
+  line-height: var(--line-height-5);
+  letter-spacing: var(--letter-space-5);
+}
+h3 {
+  font-size: var(--font-size-4);
+  line-height: var(--line-height-4);
+  letter-spacing: var(--letter-space-4);
+}
+h4 {
+  font-size: var(--font-size-3);
+  line-height: var(--line-height-3);
+  letter-spacing: var(--letter-space-3);
+}
+h5 {
+  font-size: var(--font-size-2);
+  line-height: var(--line-height-2);
+  letter-spacing: var(--letter-space-2);
+}
+h6 {
+  font-size: var(--font-size-1);
+  line-height: var(--line-height-1);
+  letter-spacing: var(--letter-space-1);
+}
+
+/* --- Alternative Text Sizes --- */
+
+:is(p, span, a, ul, ol, dl, li, dt, dd, label, blockquote, code) {
+  &.small-text {
+    font-size: var(--font-size-1b);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-space-1b);
+  }
+  &.x-small-text {
+    font-size: var(--font-size-2b);
+    line-height: var(--line-height-1b);
+    letter-spacing: var(--letter-space-2b);
+  }
+  &.large-text {
+    font-size: var(--font-size-1);
+    line-height: var(--line-height-2);
+    letter-spacing: var(--letter-space-1);
+  }
+}

@@ -4,8 +4,368 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rIQ Layout</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="type-scale.css" />
+    <script src="https://kit.fontawesome.com/3f31c361ed.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Testing Github connectivity</h1>
+    <main-header>
+        <div class="header-brand-container">
+            <div class="sidebar-control-hover-area">
+                <div class="sidebar-control sidebar-open">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-regular fa-square-caret-left"></i>
+                    <i class="fa-regular fa-square-caret-right"></i>
+                </div>
+            </div>
+            <h5 class="company-logo"><i class="fa-solid fa-feather-pointed"></i>Company Logo</h5>
+        </div>
+        <div class="header-search-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            search
+        </div>
+        <div class="header-controls-container">
+            <div class="header-notifications-container">
+                <div class="icon-button-container bullet">
+                    <i class="fa-regular fa-message"></i>
+                </div>
+                <div class="icon-button-container">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <div class="icon-button-container">
+                    <i class="fa-regular fa-calendar"></i>
+                </div>
+            </div>
+            <div class="header-actions-container">
+                <i class="fa-solid fa-square-plus"></i>
+            </div>
+            <div class="header-profile-container">
+                <i class="fa-regular fa-circle-user"></i>
+            </div>
+        </div>
+    </main-header>
+    <main-content>
+        <sidebar-nav>
+            <div class="sidebar-nav">
+                <div class="nav-icon">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <div class="nav-label">
+                    Home
+                </div>
+                <div class="nav-action">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="sidebar-nav">
+                <div class="nav-icon">
+                    <i class="fa-solid fa-user-ninja"></i>
+                </div>
+                <div class="nav-label">
+                    Access Manager Ninja
+                </div>
+                <div class="nav-action">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <details class="sidebar-nav-menu">
+                <summary>
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                    </div>
+                    <div class="nav-action nav-closed">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="nav-action nav-open">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    <div class="nav-label">
+                        Accounts/Contacts
+                    </div>
+                    <div class="nav-action nav-more">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </summary>
+                <div class="sidebar-subnav">
+                    <div class="subnav-label">
+                        Accounts
+                    </div>
+                    <div class="subnav-action">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <div class="sidebar-subnav">
+                    <div class="subnav-label">
+                        Contacts
+                    </div>
+                    <div class="subnav-action">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <div class="sidebar-subnav">
+                    <div class="subnav-label">
+                        Leads
+                    </div>
+                    <div class="subnav-action">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </details>
+            <details class="sidebar-nav-menu">
+                <summary>
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <div class="nav-action nav-closed">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="nav-action nav-open">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    <div class="nav-label">
+                        Opportunities
+                    </div>
+                    <div class="nav-action nav-more">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </summary>
+                <div class="sidebar-subnav">Subnav Link</div>
+                <div class="sidebar-subnav">Subnav Link</div>
+                <div class="sidebar-subnav">Subnav Link</div>
+                <div class="sidebar-subnav">Subnav Link</div>
+                <div class="sidebar-subnav">Subnav Link</div>
+            </details>
+            <details class="sidebar-nav-menu">
+                <summary>
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <div class="nav-action nav-closed">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="nav-action nav-open">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    <div class="nav-label">
+                        Sales
+                    </div>
+                    <div class="nav-action nav-more">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </summary>
+                <div class="sidebar-subnav">Quotations</div>
+                <div class="sidebar-subnav">Orders</div>
+                <div class="sidebar-subnav">Products</div>
+                <div class="sidebar-subnav">Product Variants</div>
+            </details>
+            <div class="sidebar-nav">
+                <div class="nav-icon">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                </div>
+                <div class="nav-label">
+                    Invoicing
+                </div>
+                <div class="nav-action">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="sidebar-nav">
+                <div class="nav-icon">
+                    <i class="fa-solid fa-receipt"></i>
+                </div>
+                <div class="nav-label">
+                    Purchasing
+                </div>
+                <div class="nav-action">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="sidebar-nav">
+                <div class="nav-icon">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                </div>
+                <div class="nav-label">
+                    Inventory
+                </div>
+                <div class="nav-action">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="sidebar-nav">
+                <div class="nav-icon">
+                    <i class="fa-solid fa-chart-gantt"></i>
+                </div>
+                <div class="nav-label">
+                    Project Management
+                </div>
+                <div class="nav-action">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="sidebar-nav">
+                <div class="nav-icon">
+                    <i class="fa-solid fa-wand-sparkles"></i>
+                </div>
+                <div class="nav-label">
+                    SUMA AI Dashboard
+                </div>
+                <div class="nav-action">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="sidebar-nav">
+                <div class="nav-icon">
+                    <i class="fa-solid fa-wheat-awn"></i>
+                </div>
+                <div class="nav-label">
+                    Lorem Ipsum
+                </div>
+                <div class="nav-action">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="sidebar-nav">
+                <div class="nav-icon">
+                    <i class="fa-solid fa-box-open"></i>
+                </div>
+                <div class="nav-label">
+                    Dolor Sit Amet
+                </div>
+                <div class="nav-action">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="sidebar-nav">
+                <div class="nav-icon">
+                    <i class="fa-solid fa-anchor"></i>
+                </div>
+                <div class="nav-label">
+                    Consectetur
+                </div>
+                <div class="nav-action">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="sidebar-nav">
+                <div class="nav-icon">
+                    <i class="fa-solid fa-chess-bishop"></i>
+                </div>
+                <div class="nav-label">
+                    Adipiscing Elit
+                </div>
+                <div class="nav-action">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="sidebar-nav">
+                <div class="nav-icon">
+                    <i class="fa-solid fa-cubes"></i>
+                </div>
+                <div class="nav-label">
+                    Praesent Interdum
+                </div>
+                <div class="nav-action">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="sidebar-divider"></div>
+            <div class="sidebar-nav">
+                <div class="app-icon" style="background-color: #ffe600">
+                    <i class="fa-solid fa-compass-drafting" style="color: black"></i>
+                </div>
+                <div class="nav-label">
+                    External Application
+                </div>
+                <div class="app-action">
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="sidebar-nav">
+                <div class="app-icon" style="background-color: #0091ff">
+                    <i class="fa-solid fa-cloud" style="color: white"></i>
+                </div>
+                <div class="nav-label">
+                    External Application
+                </div>
+                <div class="app-action">
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="sidebar-nav">
+                <div class="app-icon" style="background-color: #dc3407">
+                    <i class="fa-solid fa-fire-extinguisher" style="color: white"></i>
+                </div>
+                <div class="nav-label">
+                    External Application
+                </div>
+                <div class="app-action">
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="sidebar-divider"></div>
+            <div class="sidebar-nav">
+                <div class="nav-icon">
+                    <i class="fa-solid fa-sliders"></i>
+                </div>
+                <div class="nav-label">
+                    Sidebar Settings
+                </div>
+            </div>
+        </sidebar-nav>
+        <page-container>
+            <page-header>
+                <div class="page-title-container">
+                    <h3>
+                        <i class="fa-solid fa-user-astronaut"></i>
+                        Contacts
+                    </h3>
+                    <div class="page-action-group">
+                        <page-header-button><i class="fa-solid fa-plus"></i> New Contact</page-header-button>
+                        <div class="button-group">
+                            <page-header-button><i class="fa-solid fa-table-list"></i></page-header-button>
+                            <page-header-button><i class="fa-solid fa-table-cells-large"></i></page-header-button>
+                            <page-header-button><i class="fa-solid fa-table-cells"></i></page-header-button>
+                        </div>
+                        <page-header-button><i class="fa-solid fa-gear"></i></page-header-button>
+                    </div>
+                </div>
+                <div class="page-tabs-container">
+                    <div class="page-tab active">Section Tab</div>
+                    <div class="page-tab">Section Tab</div>
+                    <div class="page-tab">Section Tab</div>
+                    <div class="page-tab">Section Tab</div>
+                </div>
+            </page-header>
+            <page-content>
+                <div class="page-column-l">
+                    <div class="page-content-container">page-content</div>
+                </div>
+                <div class="page-column-s">
+                    <div class="page-content-container">page-content</div>
+                </div>
+            </page-content>
+        </page-container>
+    </main-content>
+    <script>
+        const sidebarControl = document.querySelector("main-header .sidebar-control");
+        const sidebarNav = document.querySelector("main-content > sidebar-nav");
+
+        if (sidebarControl && sidebarNav) {
+            sidebarControl.addEventListener("click", () => {
+                const isOpen = sidebarControl.classList.contains("sidebar-open");
+
+                if (isOpen) {
+                    sidebarControl.classList.remove("sidebar-open");
+                    sidebarControl.classList.add("sidebar-closed");
+                    sidebarNav.classList.add("sidebar-nav-closed");
+                    return;
+                }
+
+                sidebarControl.classList.remove("sidebar-closed");
+                sidebarControl.classList.add("sidebar-open");
+                sidebarNav.classList.remove("sidebar-nav-closed");
+            });
+        }
+    </script>
 </body>
 </html>
